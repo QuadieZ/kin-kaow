@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ParkKinKaow</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./assets/LOGO.svg" type="image/svg">
+  </head>
+  <body>
+    
+    <div class="web">
+        <div class="imgDiv">
+            <img src="./assets/LOGO.svg" class="logo" alt="" onclick="modalPop()">
+        </div>
+        <h2 class="index_head" style="font-weight: 400;">พักกลางวันแล้ว</br>อย่าลืม <text style="font-weight: 900;">พรรคกินข้าว</text> กันนะคะ</h2>
+        <p class="sub">เพราะมื้ออาหารเป็นสิ่งสำคัญ </br>พวกเราจึงขอเป็นคนสำคัญสำหรับคุณ</p>
+        <div class="buttons">
+            <button onclick="location.href='./policies.html'">นโยบายของเรา</button>
+            <button onclick="location.href='./members.html'">สมาชิกของเรา</button>
+        </div>
+        <p class="des">หิวความเปลี่ยนแปลง... เลือกเบอร์ <text style="font-style: italic;">1 พรรคกินข้าว</text></p>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p>วันนี้กินข้าวหรือยัง พวกเราเป็นห่วงนะ :)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Khema Siri Student Council Candidate No.1</p>
+        <img src="assets/instagram.svg" onclick="window.open('https://www.instagram.com/parkkinkaow.official/')">
+    </div>
     <script src="./index.js"></script>
-    <h1>Hello World</h1>
-</body>
+  </body>
 </html>

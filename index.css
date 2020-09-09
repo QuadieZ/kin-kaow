@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.web {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #f4f0e9;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2.index_head {
+  color: #745d57;
+}
+
+.buttons button {
+  background-color: #c18561;
+  color: #f4f0e9;
+  font-family: "Kanit", sans-serif;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  z-index: 102;
+  color: white;
+  padding: 5px;
+}
+
+.footer {
+  position: fixed;
+  z-index: 90;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer img {
+  cursor: pointer;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (orientation: landscape) {
+  img.logo {
+    height: calc(50px + 10vw);
+  }
+
+  h2.index_head {
+    font-size: calc(14px + 2vw);
+    line-height: calc(16px + 2.5vw);
+    margin-top: 1.2vw;
+  }
+
+  p.sub {
+    font-size: calc(8px + 1vw);
+    font-weight: 300;
+    color: #a49787;
+    margin-top: -1.2vw;
+  }
+
+  p.des {
+    font-size: calc(6px + 1vw);
+    font-weight: 200;
+    color: #a49787;
+  }
+
+  .buttons button {
+    font-size: calc(8px + 1vw);
+    padding: 0.2vw 0.7vw;
+    margin: 0 0.5vw;
+  }
+
+  .modal-content {
+    font-size: calc(18px + 2vw);
+  }
+
+  .footer img {
+    width: calc(15px + 2vw);
+    margin: 0.5vw;
+  }
+
+  .footer p {
+    font-size: calc(2px + 1vw);
+    font-weight: 200;
+    color: #a49787;
+    margin: 0.3vw;
+  }
+}
+
+@media (orientation: portrait) {
+  img.logo {
+    height: calc(50px + 12vh);
+  }
+
+  h2.index_head {
+    font-size: calc(14px + 2vh);
+    line-height: calc(16px + 2.5vh);
+    margin-top: 1.2vh;
+  }
+
+  p.sub {
+    font-size: calc(8px + 1vh);
+    font-weight: 300;
+    color: #a49787;
+    margin-top: -1.2vh;
+  }
+
+  p.des {
+    font-size: calc(6px + 1vh);
+    font-weight: 200;
+    color: #a49787;
+  }
+
+  .buttons button {
+    font-size: calc(8px + 1vh);
+    padding: 0.4vh 0.9vh;
+    margin: 0 0.5vh;
+  }
+
+  .modal-content {
+    font-size: calc(18px + 2vh);
+  }
+
+  .footer img {
+    width: calc(10px + 2.5vh);
+    margin: 0.5vh;
+  }
+
+  .footer p {
+    font-size: calc(2px + 1.8vh);
+    font-weight: 200;
+    color: #a49787;
+    margin: 0.3vh;
+  }
+}
