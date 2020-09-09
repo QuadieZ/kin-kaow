@@ -16,7 +16,209 @@
 
     body {
       background: #eee;
+      font-family: 'Kanit', sans-serif;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>นโยบายของเรา</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/LOGO.svg" type="image/svg">
+    <style>
+       html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
       font-family: 'Kanit', sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      
+
+    }
+
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+
+    .swiper-slide .subtitle {
+      font-size: 25px;
+      color:rgb(211, 211, 211)
+    }
+
+    .swiper-slide .text {
+      font-size: 20px;
+      max-width: 400px;
+      line-height: 1.5;
+    }
+    
+    .bg {
+        background: rgba(0,0,0,0.5);
+        width: fit-content;
+        padding: 15px;
+        overflow:scroll
+    }
+    .back {
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 20000;
+        margin:10px
+    }
+
+    @media (orientation: landscape) {
+    
+    .back {
+        width: calc(12px + 2vw);
+    }
+}
+
+@media (orientation: portrait) {
+    
+    .back {
+        width: calc(12px + 2vh);
+    }
+}
+    </style>
+</head>
+<body>
+    <img class="back"src="./assets/backw.svg" alt="" onclick="location.href='./index.html'">
+    <div class="swiper-container">
+        <div class="parallax-bg" style="background-image:url(./assets/school.jpg)" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+                <div class="bg">
+                    <div class="title" data-swiper-parallax="-300">ด้านการศึกษา</div>
+                    <div class="subtitle" data-swiper-parallax="-200">พัฒนาการศึกษาด้านวิชาการภายในโรงเรียน</div>
+                    <div class="text" data-swiper-parallax="-100">
+                    <p>- มีการตอบคำถามตามระดับชั้นตามรายวิชาต่าง ๆ อย่างที่ทำอยู่เดิม แต่ทำให้เป็นระเบียบมากขึ้นโดยแบ่งเป็นประถมต้น​ ประถมปลาย มัธยมต้น มัธยมปลาย ทำเนื้อหาให้เหมาะกับแต่ละช่วงชั้น รวมถึงการทำแบบฟอร์มตอบคำถาม ไม่ต้องไปตอบที่บอร์ด</br>
+                        -  ติดกระจกไว้ซ้อมการแสดง ในห้องรำหรือห้องซ้อมการแสดง</br>
+                        - มีการจัดบอร์ดประชาสัมพันธ์ค่ายและการแข่งขันของสาขาต่างๆ รวมทั้งช่วยหาทีมสำหรับผู้ที่ต้องการแข่งแต่ไม่สามารถรวมทีมได้</br>
+                        - ‘พี่สอนน้อง’ เปิดช่องทางให้น้องถามการบ้านหรือเนื้อหาเรียนที่สงสัยกับรุ่นพี่ และให้รุ่นพี่ที่อาสามาช่วยตอบคำถามเป็นการทำจิตอาสาและทำความรู้จักกันภายในพี่น้องเขมะสิริฯ
+                        </p>
+                    </div>
+                </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="bg">
+                <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">ด้านทักษะอาชีพและชีวิต</div>
+                <div class="subtitle" data-swiper-parallax="-200">เพื่อชีวิตที่ดีและทักษะที่รอบด้านตามความชอบของแต่ละคน </div>
+                <div class="text" data-swiper-parallax="-100">
+                <p>- มีการจัด workshop ทำกิจกรรม ตามช่วงเวลาอย่างสม่ำเสมอ​ โดยระดับประถม จะเป็นกิจกรรมนันทนาการฝึกทักษะ อย่างวาดรูป งานประดิษฐ์  และระดับมัธยม จะเป็นกิจกรรมเกี่ยวกับทักษะอาชีพนอกเหนือจากในห้องเรียนเพื่อช่วยให้ได้หาตัวตนของตัวเอง เช่น เขียนโปรแกรม วาดรูป รวมไปถึงกิจกรรมผ่อนคลาย</br>
+                    -  มีการทำ Content เพิ่มเติมลงใน Channel YouTube ของโรงเรียนอย่าง เช่น เปิดรับผู้ที่สนใจทำพอดแคสต์ สรุปเนื้อหาวิชาต่างๆ นอกจากนั้นเมื่อสถานการณ์เป็นปกติแล้ว จะมีการเปิดเพลง พอดแคสต์ เปิดพูดคุยตอบคำถามในช่วงกลางวัน</br>
+                    -  ทำแบบฟอร์ม จองเวลาคุยกับนักจิตวิทยา ทำให้สามารถจองเวลาได้สะดวกรวดเร็วมากยิ่งขึ้น รวมไปถึงการติดต่อปรึกษาออนไลน์</br>
+                    - มีการตั้ง challenge ในหัวข้อต่างๆให้ได้เล่นตามหัวข้อที่กำหนดทุกๆสองสัปดาห์ โดยหัวข้อจะมีแตกต่างกันไปเพื่อให้ทุกคนได้เลือกทำในสิ่งที่ตนถนัด เช่น ตอบปัญหา แข่งเล่นเกม ประกวดวาดรูป เป็นต้น จะมีการสะสมคะแนนไปเรื่อย ๆ และมีรางวัลให้ท้ายเทอม
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg">
+                <div class="title" data-swiper-parallax="-300">ด้านสวัสดิการภายในโรงเรียน</div>
+                <div class="subtitle" data-swiper-parallax="-200">พัฒนาคุณภาพชีวิตในโรงเรียนให้คุ้มค่าและดีขึ้น</div>
+                <div class="text" data-swiper-parallax="-100">
+                <p>ด้านเทคโนโลยี</br>
+                    - มี LINE bot สอบถาม ให้นักเรียนสามารถรายงานปัญหา ถามเมนูอาหารได้ เป็นต้น</br>   
+                    - ตั้งไอจีพรรคใช้ในฝากร้านของนักเรียน ข่าวสารโรงเรียน อัพเดตข้อมูลของพรรค และ แชร์ทริกการเรียน</br>
+                    -มี QR Code เพื่อใช้แจ้งปัญหาในโรงเรียนได้ทันทีตามจุดต่างๆในโรงเรียน</br>
+                    ด้านอาคารสถานที่</br>
+                    - มีกำหนดป้ายบอกชั้นในแต่ละชั้นของตึกแดง รวมทั้งจัดทำป้ายผังห้องของตึกให้ง่ายต่อการตามหา</br>
+                    - กันยุง เช่นมี​ การวางสเปรย์ยากันยุง​ให้ใช้ในจุดต่างๆ</br>
+                    - ติดลำโพงไว้ในตึกแดงฝั่งที่ไม่ได้ยิน รวมไปถึงบริเวณโรงอาหาร</br> 
+                    - มีบอร์ดส่วนกลางไว้ใช้แปะเนื้อหาต่างๆที่มีความน่าสนใจ รวมไปถึงข่าวสารกิจกรรมต่างๆ ทั้งในโรงเรียนและนอกโรงเรียน</br>
+                    - เปิดให้ลงรายชื่อขอให้นำสนามเด็กเล่นกลับมา เนื่องจากเราเห็นว่าสนามเด็กเล่นเป็นสิ่งที่ควรมีเพื่อส่งเสริมพัฒนาการของน้องๆ เมื่อลงชื่อแล้วเราจะนำเสนอให้โรงเรียนพิจารณา</br>
+                    ด้านห้องน้ำ</br>
+                    - มีการดับกลิ่นห้องน้ำ โดยการใช้ที่ดับกลิ่นเช่น การบูร ตรวจหาท่อรั่วและกำจัดต้นตอที่ห้องน้ำมีกลิ่น</br>
+                    - มีทิชชู่และผ้าอนามัยไว้ในห้องน้ำสาธารณะ รวมถึงห้องเรียน(ใช้การบริจาคเงินตามความสะดวกเวลาจะหยิบผ้าอนามัย​ไปใช้)​</br>
+                    - ทาสีประตูห้องน้ำตึกเขียวใหม่เพื่อลบรอยขีดเขียนเพิ่มความสะอาดและแปะป้ายเกี่ยวการดูแลรักษาห้องน้ำ</br>
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg">
+                <div class="title" data-swiper-parallax="-300">นโยบายอื่นๆเพิ่มเติม</div>
+                <div class="subtitle" data-swiper-parallax="-200">ปัญหาที่เราเล็งเห็นและจะหาทางแก้</div>
+                <div class="text" data-swiper-parallax="-100">
+                    <p>- เพิ่มโอกาสให้นักเรียนได้ไปแข่งขันนอกโรงเรียนหรือทำกิจกรรมนอกโรงเรียน</br>
+                        - มีการจัดเวิร์คช็อปเกี่ยวกับปัญหาในโรงเรียน เช่น การกลั่นแกล้งกัน ให้ความสนใจกับด้านนี้ให้มากยิ่งขึ้น</br>
+                        - เอาเสื้อมาเปลี่ยนตอนช่วงเล่นกีฬาในวิชาพละ โดยเปลี่ยนได้ในชั่วโมงพละเท่านั้น</br>
+                    </p>
+                    <h3>เราจะมีการรับฟังปัญหาเรื่อย ๆ และพยายามอย่างเต็มที่ในการหาทางแก้ปัญหาให้ทุกคน</h3>
+                </div>
+            </div>
+            </div>
+            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          speed: 600,
+          parallax: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+</body>
+</html>
       font-size: 14px;
       color: #000;
       margin: 0;
