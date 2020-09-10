@@ -22,6 +22,11 @@ h2.index_head {
   color: #745d57;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .buttons button {
   background-color: #c18561;
   color: #f4f0e9;
@@ -141,10 +146,14 @@ h2.index_head {
     color: #a49787;
   }
 
+  .buttons {
+    flex-direction: column;
+  }
+
   .buttons button {
     font-size: calc(8px + 1vh);
     padding: 0.4vh 0.9vh;
-    margin: 0 0.5vh;
+    margin: 0.5vh 0;
   }
 
   .modal-content {
